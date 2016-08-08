@@ -2,3 +2,12 @@
 
 
 ## Basic Snapshotting
+
+`git-mv` - Move or rename a file, a directory, or a symlink
+
+`git mv [-v] [-f] [-n] [-k] <source> <destination>` rename  
+`git mv [-v] [-f] [-n] [-k] <source> ... <destination directory>` move into existing directory
+
+```bash
+git mv <source> <destination> # rename a directory
+```

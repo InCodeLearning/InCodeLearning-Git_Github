@@ -7,7 +7,7 @@ git fetch origin # fetch branches and/or tags from "origin" remote
 git fetch -a # fetches from all remotes
 ```
 
-`git remote [-v | --verbose]`
+`git remote [-v | --verbose]`  
 `git remote add [-f] [--[no-]tags] <name> <url>`
 
 ```bash
@@ -18,4 +18,23 @@ git remote -v # show all remote repositories with urls
 git remote add origin https://github.com/user/repo.git
 # runs git fetch origin immediately after
 git remote add -f origin https://github.com/user/repo.git
+```
+
+### Merge a Pull Request on Github
+
+Step 1: From your project repository, bring in the changes and test.
+
+```bash
+git fetch origin
+# not necessary if you just pushed local 
+git checkout -b lname origin/rname 
+git merge dev
+```
+
+Step 2: Merge the changes and update on GitHub.
+
+```bash
+git checkout dev
+git merge --no-ff jesse # no fast fowarding, create a merge commit
+git push origin dev
 ```
