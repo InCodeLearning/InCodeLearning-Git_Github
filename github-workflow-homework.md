@@ -8,7 +8,7 @@
 
 ### Actual workflow:
 
-1. Make sure you are on your own branch git branch, create your own branch from `dev` if your branch not yet exists.
+1. Make sure you are on your own branch with `git branch`, create your own branch from `dev` if your branch not yet exists.
 2. Merge `dev` into your branch `git merge dev`.
 3. Do your edits and commits.
 4. Create pull request (PR) merging from your own branch into `dev` branch.
