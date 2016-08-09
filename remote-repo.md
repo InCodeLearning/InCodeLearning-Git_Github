@@ -38,3 +38,12 @@ git checkout dev
 git merge --no-ff jesse # no fast fowarding, create a merge commit
 git push origin dev
 ```
+
+### Pull All Remote Branches
+
+```bash
+# the first line creates local branch with same name tracking remote branch
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+```
