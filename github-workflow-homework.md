@@ -15,5 +15,5 @@
 Do more commits if you would like to. The later commits would be automatically included in the PR. Now all other team members should read your PR and comment their questions or suggestions for you.
 5. On weekly video hangout conference we will discuss each member's PR.
 6. Every week we will take turns do merging everyone’s branch into `dev`.
-  6.1 Warning: `git mergetool` is needed for resolving conflicts easily. Alternatively you could resolve the conflicts manually one file by one file.
+  1. Warning: `git mergetool` is needed for resolving conflicts easily. Alternatively you could resolve the conflicts manually one file by one file.
 7. **ONLY Jesse can merge from `dev` to `master`.**
