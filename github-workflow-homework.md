@@ -17,3 +17,9 @@ Do more commits if you would like to. The later commits would be automatically i
 6. Every week we will take turns do merging everyone’s branch into `dev`.
   1. Warning: `git mergetool` is needed for resolving conflicts easily. Alternatively you could resolve the conflicts manually one file by one file.
 7. **ONLY Jesse can merge from `dev` to `master`.**
+
+## Git Merge Resolving Conflict Homework
+
+Mimic what happened in this tree of commits and merge [here](https://github.com/InCodeLearning/git-test/commits/dev).
+
+Share with us whether you resolved the conflict manually one file by one file or used a `mergetool`. Which `mergetool` did you use? We would love to see some screen shots of your `mergetool`. Did you like the `mergetool` you used?
