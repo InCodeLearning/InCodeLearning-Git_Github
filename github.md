@@ -6,4 +6,4 @@ This has a nice web page in a format like a forum discussion post where you can 
 
 ### Blame
 
-[Example blame history](https://github.com/InCodeLearning/git-github/blame/master/github-workflow-homework.md). Comparing to `history`, which shows the exact change of each commit on the file, `blame` shows the current file and label each section with the corresponding commit for each section of the file. Hence, you can blame the bad code/text on an exact commit.
+[Example blame history](https://github.com/InCodeLearning/git-github/blame/master/github-workflow-homework.md). Comparing to `history`, which shows the exact change of each commit on the file, `blame` shows the current file and label each section with the corresponding commit. Hence, you can blame the bad code/text on an exact commit.
