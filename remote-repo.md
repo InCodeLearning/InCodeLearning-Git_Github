@@ -47,3 +47,9 @@ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remo
 git fetch --all
 git pull --all
 ```
+
+### Delete a Remote Branch
+
+```bash
+git push origin --delete <branchName>
+```
