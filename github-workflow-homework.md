@@ -1,6 +1,6 @@
 ## Actual workflow:
 
-1. Make sure you are on your own branch with `git branch`. When you first join the team, you will be assigned a branch named with your first name or preferred name. Please keep using this branch. `git checkout -b origin/<branch_name>` to start using your branch.
+1. Make sure you are on your own branch with `git branch`. When you first join the team, you will be assigned a branch named with your first name or preferred name. Please keep using this branch. `git checkout -b <branch_name> origin/<branch_name>` to start using your branch, e.g., `git checkout -b jesse origin/jesse`.
 2. **Merge `dev` into your branch `git merge dev`.**
   1. Warning: `git mergetool` might be needed for resolving conflicts if you did no follow this flow exactly. Alternatively you could resolve the conflicts manually one file by one file.
 3. Do your edits and commits and `git push`.
