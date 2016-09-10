@@ -1,12 +1,24 @@
 ## Actual workflow:
 
 1. Make sure you are on your own branch with `git branch`. When you first join the team, you will be assigned a branch named with your first name or preferred name. Please keep using this branch. `git checkout -b <branch_name> origin/<branch_name>` to start using your branch, e.g., `git checkout -b jesse origin/jesse`.
-2. **Merge `dev` into your branch `git merge dev`.**
+2. Merge in changes from the `dev` and `master` branch.
+
   1. Warning: `git mergetool` might be needed for resolving conflicts if you did no follow this flow exactly. Alternatively you could resolve the conflicts manually one file by one file.
+
+      ```bash
+      git fetch origin
+      git checkout dev  # if not created, git checkout -b dev origin/dev
+      git pull
+      git checkout master
+      git pull
+      git checkout jesse
+      git merge dev
+      ```
+  
+
 3. Do your edits and commits and `git push`.
-4. Create pull request (PR) merging from your own branch into `dev` branch.
-Do more commits if you would like to. The later commits would be automatically included in the PR. Now all other team members should read your PR and comment their questions or suggestions for you.
-5. On weekly video hangout conference we will discuss each member's PR.
+4. Create pull request (PR) merging from your own branch into `dev` branch. Do more commits if you would like to. The later commits would be automatically included in the PR. Now all other team members should read your PR and comment their questions or suggestions for you.
+5. On weekly video hangout conference we will discuss each member's PR. You are expected to have reviewed all PRs before the conference and prepared questions for each PR.
 6. After weekly meeting, Jesse will merge all the branches into `dev` within two days, i.e., if meeting was on Sunday, merge will be done before Tuesday.
 7. **ONLY Jesse can merge from `dev` to `master`.**
 
