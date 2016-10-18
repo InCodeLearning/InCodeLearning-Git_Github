@@ -53,3 +53,20 @@ git pull --all
 ```bash
 git push origin --delete <branchName>
 ```
+
+### Clear stale remote branches
+
+You deleted some remote branches however they still show up in `git branch -r`.
+
+```bash
+git remote prune origin
+```
+
+### Undo a git push
+
+Generally you should avoid at all cost pushing wrong things. But if you have to,
+
+```bash
+git push -f origin last_known_good_commit:branch_name
+git push -f origin 133fe1b8b7745a9f91fc90e556100fa87c87d00c:master
+``` 

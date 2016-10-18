@@ -11,3 +11,13 @@
 ```bash
 git mv <source> <destination> # rename a directory
 ```
+
+### Undo last commit
+
+```bash
+git commit -m "Something terribly misguided"
+git reset HEAD~
+# edit files as necessary
+git add ...
+git commit -c ORIG_HEAD
+```
