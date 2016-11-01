@@ -21,3 +21,14 @@ git reset HEAD~
 git add ...
 git commit -c ORIG_HEAD
 ```
+# Tagging
+
+```bash
+# display tag history with one line or <num> lines annotation
+git tag -n<num>
+git tag -a v1.0 -m "my version 1.0 tagging message"
+git show v1.0
+# tags have to be explicity pushed to remote
+git push origin v1.0
+git push origin --tags
+```
