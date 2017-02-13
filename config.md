@@ -12,6 +12,7 @@ git config --global user.name "Jesse Zhuang"
 git config --global user.email "JesseDoe@gmail.com"
 ```
 password storage
+
 SSH allows key without passphrase, no username/password needed.
 ```bash
 # save for 15 min

@@ -18,6 +18,8 @@ git remote -v # show all remote repositories with urls
 git remote add origin https://github.com/user/repo.git
 # runs git fetch origin immediately after
 git remote add -f origin https://github.com/user/repo.git
+# change remote repo url, useful when you renamed github repo
+git remote set-url origin https://github.com/InCodeLearning/InCodeLearning-Git_Github.git
 ```
 
 ### Merge a Pull Request on Github

@@ -26,9 +26,17 @@ git commit -c ORIG_HEAD
 ```bash
 # display tag history with one line or <num> lines annotation
 git tag -n<num>
+# annotated tags
 git tag -a v1.0 -m "my version 1.0 tagging message"
 git show v1.0
+# lightweight tags, aliase to a commit, no extra message
+git tag v1.1-lw
 # tags have to be explicity pushed to remote
 git push origin v1.0
 git push origin --tags
+# display detailed tag information
+git for-each-ref --sort -v:refname --format '%(objectname) %(objecttype) %(refname) %(contents) %(*objectname) %(*objecttype) %(*refname) %(*contents)' refs/tags | grep commit
+# tagging later
+git log --pretty=oneline
+git tag -a v1.2 9fceb02 # first 7 digits of hash (sha-1)
 ```
