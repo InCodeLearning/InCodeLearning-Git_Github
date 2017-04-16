@@ -1,5 +1,4 @@
-## Getting and Creating Projects
-
+Category reference [git official docs](https://git-scm.com/docs/). Or click "Topics" on any git command official doc.
 
 ## Basic Snapshotting
 
@@ -21,7 +20,17 @@ git reset HEAD~
 git add ...
 git commit -c ORIG_HEAD
 ```
-# Tagging
+
+### Modify last commit
+
+```bash
+# update last commit's time to right now
+GIT_COMMITTER_DATE="`date`" git commit --amend --date "`date`"
+# will bring up window to modify last commit's commit message
+git commit --amend
+```
+
+## Tagging
 
 ```bash
 # display tag history with one line or <num> lines annotation

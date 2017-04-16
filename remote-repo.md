@@ -1,5 +1,14 @@
 This markdown file summarizes all git commands working with remote repositories such as github or bitbucket.
 
+# clone
+
+```bash
+# with git 1.9 or later can download simultaneously
+git clone --resursive -j8 <remote-repo-url>
+# for already cloned repos
+git submodule update --init --recursive
+```
+
 `git fetch [<options>] [<repository> [<refspec>]]`
 
 ```bash

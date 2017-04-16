@@ -23,3 +23,14 @@ git merge --no-ff
 git merge jesse
 # merge commits on jesse into current branch
 ```
+
+## Rebasing
+
+```
+git pull --rebase # may resolve upstream squashing commits, many use as default
+git config --global pull.rebase true # to set as default
+```
+
+References:
+
+[when to use `git pull --rebase`](http://stackoverflow.com/questions/2472254/when-should-i-use-git-pull-rebase)
