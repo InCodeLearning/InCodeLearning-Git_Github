@@ -1,4 +1,4 @@
-Category reference [git official docs](https://git-scm.com/docs/). Or click "Topics" on any git command official doc.
+Category reference [git official docs](https://git-scm.com/docs/). Or click "Topics" (top right corner) on any git command official doc.
 
 ## Basic Snapshotting
 
